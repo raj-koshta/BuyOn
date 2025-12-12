@@ -1,0 +1,62 @@
+/* EXPAND WHEN HOVER (DESKTOP) */
+#sidebar.expanded-hover {
+    width: 260px !important;
+}
+
+#sidebar.expanded-hover nav span {
+    display: inline-block !important;
+}
+
+/* MOBILE SLIDE-IN SIDEBAR */
+#sidebar.mobile-open {
+    display: flex !important;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 260px !important;
+    z-index: 9999;
+    background-color: #0f172a;
+    /* slate-900 */
+}
+
+
+
+#sidebar.sidebar-hover .label {
+    display: inline-block !important;
+}
+
+/* SIDEBAR COLLAPSE */
+#sidebar.collapsed {
+    width: 80px !important;
+}
+
+/* Hide text when collapsed */
+#sidebar.collapsed .text-label,
+#sidebar.collapsed .menu-title,
+#sidebar.collapsed .submenu {
+    display: none !important;
+}
+
+/* Adjust aside links when collapsed */
+#sidebar.collapsed .aside-link {
+    justify-content: center;
+    padding: 12px !important;
+}
+
+/* On hover, expand full */
+#sidebar.collapsed:hover {
+    width: 260px !important;
+}
+
+/* Show titles again on hover */
+#sidebar.collapsed:hover .text-label,
+#sidebar.collapsed:hover .menu-title,
+#sidebar.collapsed:hover .submenu {
+    display: block !important;
+}
+
+/* Animation */
+#sidebar {
+    transition: width 0.25s ease-in-out;
+}
